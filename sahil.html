@@ -1,0 +1,318 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Pilaware | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    color:#00f7ff;
+}
+
+nav a{
+    color:white;
+    margin-left:25px;
+    text-decoration:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f7ff;
+}
+
+/* SECTION COMMON */
+
+section{
+    padding:120px 10%;
+}
+
+h2{
+    font-size:36px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+h2 span{
+    color:#00f7ff;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text span{
+    color:#00f7ff;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 25px;
+    background:#00f7ff;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px #00f7ff;
+}
+
+.hero-img img{
+    width:300px;
+    border-radius:50%;
+    box-shadow:0 0 40px #00f7ff;
+}
+
+/* SERVICES */
+
+.services-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.service-box{
+    background:#111;
+    padding:30px;
+    width:250px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00f7ff;
+}
+
+/* SKILLS */
+
+.skill{
+    margin:20px 0;
+}
+
+.skill-name{
+    margin-bottom:5px;
+}
+
+.progress{
+    background:#222;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:10px;
+    background:#00f7ff;
+}
+
+/* PROJECTS */
+
+.projects-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.project-box{
+    background:#111;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-box:hover{
+    box-shadow:0 0 20px #00f7ff;
+}
+
+/* CONTACT */
+
+.contact p{
+    text-align:center;
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#777;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+    nav{
+        display:none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Portfolio.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Sahil <span>Pilaware</span></h1>
+        <h3>Beginner Web Developer</h3>
+        <p>
+            I am a beginner web development student from Katraj, Pune.
+            Currently learning HTML and CSS and building responsive websites.
+        </p>
+        <a href="#about" class="btn">More About Me</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://i.imgur.com/4ZQZ4ZK.png" alt="Profile">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About <span>Me</span></h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        My name is Sahil Somnath Pilaware. I am from Katraj, Pune.
+        I am passionate about coding and learning new technologies.
+        My goal is to become a professional full stack developer.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>My <span>Services</span></h2>
+    <div class="services-container">
+        <div class="service-box">
+            <h3>Web Design</h3>
+            <p>Creating modern and responsive website layouts.</p>
+        </div>
+        <div class="service-box">
+            <h3>Frontend Development</h3>
+            <p>Building clean websites using HTML and CSS.</p>
+        </div>
+        <div class="service-box">
+            <h3>Learning Projects</h3>
+            <p>Developing beginner-level real world projects.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My <span>Skills</span></h2>
+
+    <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Basic Computer Knowledge</div>
+        <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My <span>Projects</span></h2>
+    <div class="projects-container">
+        <div class="project-box">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio using HTML & CSS.</p>
+        </div>
+        <div class="project-box">
+            <h3>Login Page</h3>
+            <p>Modern login page design with styling.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact <span>Me</span></h2>
+    <p>Email: sahilpilaware@email.com</p>
+    <p>Phone: +91 XXXXX XXXXX</p>
+    <p>Location: Katraj, Pune, India</p>
+</section>
+
+<footer>
+    © 2026 Sahil Somnath Pilaware | All Rights Reserved
+</footer>
+
+</body>
+</html>
